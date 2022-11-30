@@ -457,6 +457,12 @@ footer {
     .section {margin: calc(2em + 4vh) 0;}
 }
 
+
+@media screen and (max-width: 750px) {
+    .logo span {display: none}
+}
+
+
 @media screen and (max-width: 1200px) {
 
     .Service li {flex-direction: column}
