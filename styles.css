@@ -463,12 +463,12 @@ footer {
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .logo span {display: none}
 }
 
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 720px) {
     .top-strip ul {
         flex-direction: column;
     }
