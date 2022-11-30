@@ -476,12 +476,12 @@ footer {
         flex-direction: column;
     }
 
+    .best-seller-card-name {font-size: calc(1.8vmax + 2em)}
+
     .point-product, .product-bubble {display: none}
 
     .section {margin: calc(2em + 4vh) 0;}
 
     .Best-Seller-wrapper .arrow-more { right: 10% }
-
-    .best-seller-card-name { font-size: calc(1.8vmax + 2em) }
 }
 
