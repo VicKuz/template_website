@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {color: #081323; overflow-x: hidden}
+
+.Hero {
+    width: 100%;
+    height: 130vh;
+    background-image: url("images/hero.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.point-product {
+     background-image: url("icons/point-product.svg");
+     width: 4.5em;
+     height: 4.5em;
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     cursor: pointer;
+    position: absolute;
+ }
+
+.point-1 {
+    top: 39%;
+    left: 6%;
+}
+
+.point-2 {
+    top: 57%;
+    left: 10%;
+}
+
+.point-3 {
+    top: 55%;
+    left: 90%;
+}
+
+.product-bubble {
+    position: absolute;
+    top: 44%;
+    left: 84%;
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px white solid;
+    width: 15em;
+    height: 6em;
+    border-radius: 24px;
+    transform-origin: 55% 0;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+}
+.product-bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 2;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    border-width: 20px 20px 0;
+    bottom: -20px;
+    left: 30%;
+    margin-left: -20px;
+    border-radius: 24px;
+}
+
+.vignette {
+    background: linear-gradient(to top, #ffffff, transparent);
+    position: absolute;
+    bottom: -2vh;
+    left: 0;
+    height: 32vh;
+    width: 100%;
+    opacity: 1;
+}
+
+.hero-content {
+    margin-top: 8vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90vw;
+    gap: 3.5vh;
+}
+
+.top-strip {
+    padding: 2.5vmax;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo, .icon {flex: 1;}
+.logo, .icon, .top-strip ul {display: flex; align-items: center;}
+
+
+.logo {margin-right: auto; cursor: pointer}
+.logo .logo-button  {width:46px; height: 46px; background-image: url("icons/tabler_plant-2.svg"); background-position: center; background-size: contain; background-repeat: no-repeat;}
+.logo span {margin-left: 0.5vmax; font-size: 1.8vmax; font-weight: bolder }
+
+.cart-button  {cursor: pointer; margin-left: auto; width:32px; height: 38px; background-image: url("icons/fa6-solid_bag-shopping.svg"); background-position: center; background-size: contain; background-repeat: no-repeat;}
+
+.icon:after {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: -webkit-linear-gradient(360deg, #2AF598, #009EFD);
+    content: '2';
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.75em;
+    transform: translateX(-60%) translateY(-30%);
+}
+
+.top-strip ul {
+    justify-content: center;
+    flex-direction: row;
+    gap: 4vmax;
+}
+
+.top-strip ul li:first-child {
+    background: -webkit-linear-gradient(360deg, #2AF598, #009EFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.top-strip ul li { list-style: none; font-size: calc(1vmax + 0.5em); cursor: pointer }
+
+.Hero h1 {
+    font-size: clamp(1rem, 5vmax, 7rem);
+    font-weight: bold;
+    margin: 0;
+    /* white-space: nowrap; */
+}
+
+.Hero p {
+    line-height: 1.5;
+    font-size: calc(1vmax + 0.5em);
+    font-weight: normal;
+}
+
+.Hero .search-bar {width: 24%;}
+footer .search-bar {width: 100%}
+
+.search-bar {
+    min-width: calc(10vw + 20em);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.searchQueryInput {
+    width: 100%;
+    height: 5rem;
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+    border: 2px white solid;
+    border-radius: 2.5rem;
+    padding: 0 4.5rem 0 1.5rem;
+    font-size: calc(1vmax + 0.5em);
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.searchQueryInput::placeholder, .searchQueryInput  {color: white; opacity: 1;}
+
+.Hero .search-button {width: 3rem; height: 3rem; background-image: url("icons/btn-search.svg"); background-size: contain; background-repeat: no-repeat;}
+footer .search-button {width: 9.25532rem; height: 3rem; background-image: url("icons/Frame 26.svg"); background-size: contain; background-repeat: no-repeat;}
+
+.Hero .searchQuerySubmit {
+    width: 3rem;
+    height: 3rem;
+    margin-left: -4rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+footer .searchQuerySubmit {
+    width: 9.25532rem;
+    height: 3rem;
+    margin-left: -10.25532rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.searchQuerySubmit:hover, .search-button:hover {cursor: pointer;}
+
+.wrapper {
+    padding: 0 7vw;
+    padding-top: 2vh;
+}
+
+.Service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Service li, .Care li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1vmax;
+}
+
+.Service li .service-info, .Care li .care-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+}
+
+.Service li .service-title, .Care li .care-title {
+    font-size: calc(1.5vmax + 0.5em);
+    font-weight: 500;
+}
+
+.Service li .service-description {
+    font-size: calc(0.7vmax + 0.5em);
+    color: #828282;
+    font-weight: 500;
+}
+
+.service-icon, .care-icon {
+    width: 4.5vmax;
+    height: 4.5vmax;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Service .icon-shipping {background-image: url("icons/akar-icons_shipping-box-02.svg");}
+.Service .icon-payment {background-image: url("icons/fluent_wallet-credit-card-16-regular.svg");}
+.Service .icon-support {background-image: url("icons/akar-icons_support.svg");}
+
+.Best-Seller-wrapper {position: relative; padding-top: 7.5em}
+.Best-Seller {display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 4vw}
+.Best-Seller ul {display: flex; flex-direction: row; align-items: stretch; gap: 2vw; list-style: none; flex-grow: 1;}
+.best-seller-card {cursor: pointer; position: relative; background: #C1D0E4; border-radius: 50px; flex: 1; height: 34em; min-width: 20em}
+.best-seller-card-description {width: 100%; height: 50%; background: white; border-radius: 50px; position: absolute; bottom: 0; padding: 2.2em; display: flex; flex-direction: column;}
+.best-seller-card-name {font-size: calc(1.8vmax + 0.5em); font-weight: 500}
+
+
+.Best-Seller-wrapper .arrow-more {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-image: url("icons/bi_arrow-right-circle-fill.svg");
+    width: 4.5em;
+    height: 4.5em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    transform: translateX(50%) translateY(-50%);
+    cursor: pointer;
+}
+
+
+.best-seller-card-plant-image {
+    width: 100%;
+    height: 20em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -7.5em;
+    cursor: pointer;
+}
+.best-seller-card-plant-image.plant-1 {background-image: url("images/camille-plant-terracotta-pot-home-decor-object 1.svg")}
+.best-seller-card-plant-image.plant-2 {background-image: url("images/peace-lily-plant-terracotta-pot-home-decor-object 1.svg")}
+.best-seller-card-plant-image.plant-3 {background-image: url("images/snake-plant-terracotta-pot-home-decor 1.svg")}
+
+.star {cursor: pointer; display: inline-block; background-image: url("icons/ant-design_star-filled.svg"); width: 1.8em; height: 1.8em; background-position: center; background-size: contain; background-repeat: no-repeat}
+
+.best-seller-card-buy-details {margin-top: auto; display: flex; flex-direction: row; align-items: center; justify-content: space-between}
+.best-seller-card-price {font-weight: 500; font-size: calc(1.4vmax + 0.6em)}
+.plus-button {
+    background-image: url("icons/akar-icons_circle-plus-fill.svg");
+    width: 4.5em;
+    height: 4.5em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.reference-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4vh;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "image-1 image-2"
+    "image-3 image-2";
+    height: 120vmin;
+}
+
+.image-1 {grid-area: image-1; background: rgba(0, 0, 0, .34) url("images/image-1.jpg"); background-blend-mode: darken; display: flex; align-items: center; justify-content: center; cursor: pointer}
+.image-2 {grid-area: image-2; background: url("images/image-2.jpg");}
+.image-3 {grid-area: image-3; background: url("images/image-3.jpg");}
+
+.reference-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    color:white;
+    font-size: calc(2.5vmax + 0.5em);
+    font-weight: 600;
+}
+
+.section {margin: calc(4em + 7vh) 0;}
+.section-head {margin-bottom: 5vh}
+.section-headlight {font-size: calc(3.4vmax + 0.5em); font-weight: 500; display: block; margin-bottom: 3vh;}
+.section-description {font-size: calc(0.9vmax + 0.5em); display: inline-block; color: #4F4F4F}
+
+.Reference .section-head {text-align: center}
+.Best-Seller .section-description {font-weight: 500}
+
+.section-description-wrapper {display: flex; flex-direction: row; align-items: center; gap: 1em; cursor: pointer}
+
+.Best-Seller .section-description-wrapper .arrow {
+    display: inline-block;
+    background: url("icons/bi_arrow-right-short.svg") center no-repeat;
+    width: 2em;
+    height: 2em;
+    background-size: contain;
+}
+
+
+.care-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Care li {align-items: flex-start;}
+
+.Care ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.Care .icon-sun {background-image: url("icons/sun.svg");}
+.Care .icon-water {background-image: url("icons/water.svg");}
+.Care .icon-plant {background-image: url("icons/plant.svg");}
+.Care .icon-sensor {background-image: url("icons/sensor.svg");}
+
+.care-image {
+    background: url("images/unsplash_sEApBUS4fIk.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    width: 70vmin;
+    height: 70vmin;
+}
+
+.care-description {font-size: calc(0.8vmax + 0.5em); color: #4F4F4F}
+
+.care-info {max-width: 35vw}
+
+
+
+footer {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(to right, #566270, #283444);
+    color: white;
+    padding: 7%;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+}
+
+.footer-menu-item {align-self: flex-start;}
+.footer-menu-item:first-child {min-width: 25vw; align-self: center}
+
+.footer-menu-item .newsletter-head {
+    font-size: calc(2.6vmax + 0.5em);
+    margin-bottom: 2vh;
+    display: inline-block;
+}
+
+.footer-menu-item b {
+    font-size: calc(1.1vmax + 0.5em);
+    margin-bottom: 4vh;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer-menu-item ul {
+    font-size: calc(0.5vmax + 0.5em);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 6vh;
+    border-top: 1px white solid;
+    font-size: calc(0.8vmax + 0.5em);
+}
+
+.search-button {display: block}
+
+
+
+
+@media screen and (max-width: 690px) {
+    .top-strip ul {
+        flex-direction: column;
+    }
+
+    .point-product, .product-bubble {display: none}
+
+    .section {margin: calc(2em + 4vh) 0;}
+}
+
+@media screen and (max-width: 1200px) {
+
+    .Service li {flex-direction: column}
+
+
+    .footer-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-menu-item {
+        align-self: center;
+    }
+
+    .footer-menu-item b {margin-top:4vh}
+
+}
