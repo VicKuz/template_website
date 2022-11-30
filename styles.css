@@ -482,6 +482,6 @@ footer {
 
     .Best-Seller-wrapper .arrow-more { right: 10% }
 
-    .best-seller-card-name {font-size: calc(1.8vmax + 2em);}
+    .best-seller-card-name { font-size: calc(1.8vmax + 2em) }
 }
 
