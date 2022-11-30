@@ -445,24 +445,6 @@ footer {
 .search-button {display: block}
 
 
-
-
-@media screen and (max-width: 690px) {
-    .top-strip ul {
-        flex-direction: column;
-    }
-
-    .point-product, .product-bubble {display: none}
-
-    .section {margin: calc(2em + 4vh) 0;}
-}
-
-
-@media screen and (max-width: 750px) {
-    .logo span {display: none}
-}
-
-
 @media screen and (max-width: 1200px) {
 
     .Service li {flex-direction: column}
@@ -480,3 +462,19 @@ footer {
     .footer-menu-item b {margin-top:4vh}
 
 }
+
+@media screen and (max-width: 750px) {
+    .logo span {display: none}
+}
+
+
+@media screen and (max-width: 690px) {
+    .top-strip ul {
+        flex-direction: column;
+    }
+
+    .point-product, .product-bubble {display: none}
+
+    .section {margin: calc(2em + 4vh) 0;}
+}
+
