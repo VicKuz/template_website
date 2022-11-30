@@ -476,5 +476,7 @@ footer {
     .point-product, .product-bubble {display: none}
 
     .section {margin: calc(2em + 4vh) 0;}
+
+    .Best-Seller-wrapper .arrow-more {right: 10%}
 }
 
